@@ -1,0 +1,13 @@
+{
+  "name": "id3tag",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:song940/node-id3.git",
+    "type": "git"
+  },
+  "author": "Lsong <song940@gmail.com>",
+  "license": "MIT",
+  "description": "ID3 tags library",
+  "dependencies": {}
+}
