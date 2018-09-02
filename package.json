@@ -1,7 +1,7 @@
 {
-  "name": "id3tag",
+  "name": "id3v1",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "v1.js",
   "repository": {
     "url": "git@github.com:song940/node-id3.git",
     "type": "git"

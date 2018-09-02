@@ -17,7 +17,7 @@ const reader = buf => {
  * @wiki https://en.wikipedia.org/wiki/ID3
  * @param {*} file 
  */
-module.exports = file => {
+const parse = file => {
   if(typeof file === 'string')
     file = fs.readFileSync(file);
   if(file instanceof Buffer)
@@ -46,4 +46,8 @@ module.exports = file => {
     track,
     genre,
   };
+};
+
+module.exports = {
+  parse
 };

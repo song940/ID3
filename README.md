@@ -5,20 +5,27 @@
 ### Installation
 
 ```bash
-$ npm i id3tag
+$ npm i id3v1 --save
 ```
 
 ### Example
 
 ```js
-const ID3 = require('id3tag');
-const id3 = new ID3('song.mp3');
+const ID3v1 = require('id3v1');
 
-fs
-.createReadStream('song.mp3')
-.pipe(id3)
+const tag = ID3v1.parse('example.mp3');
 
-console.log(id3);
+console.log(tag);
+
+// ->>
+//  { header: 'TAG',
+//   title: 'You Are Not Alone',
+//   artist: 'Frida Amundsen',
+//   album: 'September Blue',
+//   year: '2018',
+//   comment: 'test',
+//   track: 0,
+//   genre: 'Other' }
 ```
 
 ### Contributing

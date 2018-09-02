@@ -1,5 +1,6 @@
 .DS_*
 *.log
+*.mp3
 logs
 **/*.backup.*
 **/*.back.*
